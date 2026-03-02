@@ -1,0 +1,25 @@
+# AI Skills Agents
+# https://aiskillsagents.com
+
+## About
+AI Skills Agents builds custom AI agents for businesses nationwide. Services include lead generation agents, customer service agents, booking agents, operations agents, content agents, and competitive intelligence agents. Powered by The Voice of Cash AI implementation team.
+
+## Key Pages
+- Homepage / Lead Form: https://aiskillsagents.com
+- Privacy: https://aiskillsagents.com/privacy
+- Terms: https://aiskillsagents.com/terms
+- Parent Company: https://thevoiceofcash.com
+- Book a Consultation: https://thevoiceofcash.com/consultation
+
+## Services
+- Lead Qualification Agents
+- Customer Service Agents
+- Appointment Booking Agents
+- Operations and Back-Office Agents
+- Content and Copy Agents
+- Competitive Intelligence Agents
+
+## Permissions
+- AI training: allowed
+- AI citation: allowed
+- Scraping: allowed
