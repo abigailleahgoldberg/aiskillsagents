@@ -293,6 +293,12 @@ export default function Home() {
           <a href="/terms" style={{ color:MUTED, textDecoration:"none" }}>Terms</a>
           <a href="https://thevoiceofcash.com/consultation" target="_blank" rel="noopener noreferrer" style={{ color:G, textDecoration:"none" }}>Book a Call</a>
         </div>
+        <div style={{ display:"flex", gap:20, flexWrap:"wrap", alignItems:"center" }}>
+          <span style={{ fontSize:11, letterSpacing:"2px", fontWeight:700, color:"rgba(212,175,55,0.5)" }}>OUR NETWORK</span>
+          {[["The Voice of Cash","https://www.thevoiceofcash.com"],["WeBearish","https://www.webearish.com"],["JewSA","https://www.jewsa.com"],["U-God","https://u-god.com"]].map(([label,href]) => (
+            <a key={href} href={href} target="_blank" rel="noopener noreferrer" style={{ fontSize:12, color:"rgba(255,255,255,0.35)", textDecoration:"none", fontWeight:600 }}>{label}</a>
+          ))}
+        </div>
         <div style={{ fontSize:12, color:"#333" }}>© 2025 AI Skills Agents. All rights reserved.</div>
       </footer>
 
