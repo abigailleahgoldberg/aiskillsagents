@@ -332,7 +332,7 @@ export default function Home() {
         <div style={{ fontSize: 12, color: '#333' }}>© 2025 AI Skills Agents. All rights reserved.</div>
       </footer>
 
-      <style jsx global>{}</style>
+      <style jsx global>{``}</style>
     </>
   );
 }
