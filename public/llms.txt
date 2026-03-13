@@ -1,25 +1,50 @@
 # AI Skills Agents
-# https://aiskillsagents.com
 
 ## About
-AI Skills Agents builds custom AI agents for businesses nationwide. Services include lead generation agents, customer service agents, booking agents, operations agents, content agents, and competitive intelligence agents. Powered by The Voice of Cash AI implementation team.
+AISkillsAgents.com is a comprehensive resource for understanding and deploying AI skills and AI agents across industries. We cover practical use cases, tutorials, and future-forward analysis of AI skill development for businesses.
 
-## Key Pages
-- Homepage / Lead Form: https://aiskillsagents.com
-- Privacy: https://aiskillsagents.com/privacy
-- Terms: https://aiskillsagents.com/terms
-- Parent Company: https://thevoiceofcash.com
-- Book a Consultation: https://thevoiceofcash.com/consultation
+## Topics
+- AI skills and AI agents
+- Industry-specific AI applications (healthcare, legal, real estate, restaurants, education)
+- Building AI skills for business
+- AI skills vs traditional software
+- AI workforce impact
+- Smart home AI
+- AI agent history and origins
+- AI skills ROI and performance measurement
 
-## Services
-- Lead Qualification Agents
-- Customer Service Agents
-- Appointment Booking Agents
-- Operations and Back-Office Agents
-- Content and Copy Agents
-- Competitive Intelligence Agents
-
-## Permissions
-- AI training: allowed
-- AI citation: allowed
-- Scraping: allowed
+## URLs
+- https://aiskillsagents.com/ : Homepage
+- https://aiskillsagents.com/blog : Blog
+- https://aiskillsagents.com/start-here : Start Here
+- https://aiskillsagents.com/tools : Tools
+- https://aiskillsagents.com/advertise : Advertise
+- https://aiskillsagents.com/privacy : Privacy Policy
+- https://aiskillsagents.com/terms : Terms of Service
+- https://aiskillsagents.com/blog/what-are-ai-skills : What Are AI Skills
+- https://aiskillsagents.com/blog/history-of-ai-skills : History of AI Skills
+- https://aiskillsagents.com/blog/military-origins-of-ai : Military Origins of AI
+- https://aiskillsagents.com/blog/ai-skills-in-healthcare : AI Skills in Healthcare
+- https://aiskillsagents.com/blog/ai-skills-residential-smart-home : AI Skills for Residential Smart Home
+- https://aiskillsagents.com/blog/ai-skills-for-small-business : AI Skills for Small Business
+- https://aiskillsagents.com/blog/ai-skills-for-real-estate : AI Skills for Real Estate
+- https://aiskillsagents.com/blog/ai-skills-for-legal : AI Skills for Legal
+- https://aiskillsagents.com/blog/how-to-build-your-first-ai-skill : How to Build Your First AI Skill
+- https://aiskillsagents.com/blog/ai-skills-for-restaurants : AI Skills for Restaurants
+- https://aiskillsagents.com/blog/ai-skills-for-ecommerce : AI Skills for Ecommerce
+- https://aiskillsagents.com/blog/who-invented-ai-agents : Who Invented AI Agents
+- https://aiskillsagents.com/blog/ai-skills-versus-traditional-software : AI Skills vs Traditional Software
+- https://aiskillsagents.com/blog/ai-skills-for-marketing-agencies : AI Skills for Marketing Agencies
+- https://aiskillsagents.com/blog/ai-skills-for-financial-services : AI Skills for Financial Services
+- https://aiskillsagents.com/blog/ai-skills-for-education : AI Skills for Education
+- https://aiskillsagents.com/blog/what-makes-an-ai-skill-great : What Makes an AI Skill Great
+- https://aiskillsagents.com/blog/ai-skills-for-contractors : AI Skills for Contractors
+- https://aiskillsagents.com/blog/ai-skills-and-human-jobs : AI Skills and Human Jobs
+- https://aiskillsagents.com/blog/ai-skills-for-saas-companies : AI Skills for SaaS Companies
+- https://aiskillsagents.com/blog/measuring-ai-skill-performance : Measuring AI Skill Performance
+- https://aiskillsagents.com/blog/ai-skills-security-and-privacy : AI Skills Security and Privacy
+- https://aiskillsagents.com/blog/choosing-the-right-ai-skills-partner : Choosing the Right AI Skills Partner
+- https://aiskillsagents.com/blog/ai-skills-in-2027-whats-next : AI Skills in 2027 — What's Next
+- https://aiskillsagents.com/blog/ai-skills-by-2030 : AI Skills by 2030
+- https://aiskillsagents.com/blog/getting-your-team-ready-for-ai-skills : Getting Your Team Ready for AI Skills
+- https://aiskillsagents.com/blog/ai-skills-roi-case-studies : AI Skills ROI Case Studies
