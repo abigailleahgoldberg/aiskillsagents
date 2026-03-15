@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
         'api-key': brevoKey,
       },
       body: JSON.stringify({
-        sender: { name: 'AI Skills Agents', email: 'noreply@thevoiceofcash.com' },
+        sender: { name: 'AI Skills Agents', email: 'abigailleahgoldberg@gmail.com' },
         to: [{ email: 'thevoiceofcash@gmail.com', name: 'The Voice of Cash' }],
         subject: `[AI Skills Agents] New Lead: ${business} (${name})`,
         htmlContent: `
