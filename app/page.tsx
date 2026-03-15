@@ -897,12 +897,13 @@ export default function Home() {
               ))}
             </div>
             <div>
-              <div style={{ fontWeight: 700, fontSize: 13, color: TEXT, marginBottom: 16, textTransform: 'uppercase', letterSpacing: '0.5px' }}>Our Network</div>
+              <div style={{ fontWeight: 700, fontSize: 13, color: TEXT, marginBottom: 16, textTransform: 'uppercase', letterSpacing: '0.5px' }}>AI Network</div>
               {[
-                ['The Voice of Cash', 'https://www.thevoiceofcash.com'],
-                ['WeBearish', 'https://www.webearish.com'],
-                ['JewSA', 'https://www.jewsa.com'],
-                ['U-God', 'https://u-god.com'],
+                ['ClaudeAISkills', 'https://claudeaiskills.com'],
+                ['AnthropicAISkills', 'https://anthropicaiskills.com'],
+                ['AISkillsGenerator', 'https://aiskillsgenerator.com'],
+                ['SearchPerformanceMarketing', 'https://searchperformancemarketing.com'],
+                ['The Voice of Cash', 'https://thevoiceofcash.com'],
               ].map(([label, href]) => (
                 <a key={href} href={href} target="_blank" rel="noopener noreferrer"
                   style={{ display: 'block', fontSize: 14, color: TEXT_MUTED, textDecoration: 'none', marginBottom: 10 }}

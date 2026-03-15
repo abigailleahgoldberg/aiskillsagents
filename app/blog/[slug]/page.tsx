@@ -242,6 +242,18 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </section>
       )}
 
+      {/* AI Network Footer Section */}
+      <section style={{ padding: "32px 5vw", maxWidth: 800, margin: "0 auto 0" }}>
+        <div style={{ background: BG_WARM, border: `1px solid ${BORDER}`, borderRadius: 10, padding: "24px" }}>
+          <div style={{ fontSize: 11, fontWeight: 700, color: BLUE, letterSpacing: "1px", textTransform: "uppercase", marginBottom: 14 }}>AI Network</div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+            <a href="https://claudeaiskills.com" style={{ color: BLUE, textDecoration: "none", fontSize: 14 }}><strong>ClaudeAISkills.com</strong> — Build Claude skills and prompt frameworks for your specific business workflows</a>
+            <a href="https://anthropicaiskills.com" style={{ color: BLUE, textDecoration: "none", fontSize: 14 }}><strong>AnthropicAISkills.com</strong> — Anthropic deep dives: model capabilities, API guides, and enterprise AI strategy</a>
+            <a href="https://searchperformancemarketing.com" style={{ color: BLUE, textDecoration: "none", fontSize: 14 }}><strong>SearchPerformanceMarketing.com</strong> — AI-powered SEO and digital marketing systems that drive measurable results</a>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer style={{ background: BG_WARM, borderTop: `1px solid ${BORDER}`, padding: "28px 5vw", display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 16, fontSize: 13, color: TEXT_MUTED }}>
         <a href="/" style={{ fontFamily: "var(--font-merriweather), serif", fontWeight: 700, fontSize: 16, color: TEXT, textDecoration: "none" }}>AI Skills Agents</a>

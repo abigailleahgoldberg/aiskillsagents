@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Merriweather, Inter } from 'next/font/google';
 import './globals.css';
+import NetworkBar from '../components/NetworkBar';
 
 const merriweather = Merriweather({
   weight: ['400', '700'],
@@ -53,7 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta property="og:image:type" content="image/png" />
         <meta name="facebook-domain-verification" content="" />
       </head>
-      <body style={{ fontFamily: 'var(--font-inter), system-ui, sans-serif' }}>{children}</body>
+      <body style={{ fontFamily: 'var(--font-inter), system-ui, sans-serif' }}><NetworkBar />{children}</body>
     </html>
   );
 }
