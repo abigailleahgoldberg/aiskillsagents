@@ -1,41 +1,68 @@
 import { NextRequest, NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
 
 export async function POST(req: NextRequest) {
   try {
     const { name, email, business, pain, size } = await req.json();
-    if (!name || !email || !business || !pain) return NextResponse.json({ error: 'Missing fields' }, { status: 400 });
+    if (!name || !email || !business || !pain) {
+      return NextResponse.json({ error: 'Missing fields' }, { status: 400 });
+    }
 
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: { user: process.env.EMAIL_USER, pass: process.env.EMAIL_PASS },
+    const brevoKey = process.env.BREVO_API_KEY;
+    if (!brevoKey) {
+      console.error('BREVO_API_KEY not set');
+      return NextResponse.json({ ok: true });
+    }
+
+    // Add contact to Brevo CRM
+    await fetch('https://api.brevo.com/v3/contacts', {
+      method: 'POST',
+      headers: {
+        'accept': 'application/json',
+        'content-type': 'application/json',
+        'api-key': brevoKey,
+      },
+      body: JSON.stringify({
+        email,
+        attributes: { FIRSTNAME: name, COMPANY: business, SOURCE: 'AI Skills Agents' },
+        listIds: [3],
+        updateEnabled: true,
+      }),
     });
 
-    await transporter.sendMail({
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_TO || 'thevoiceofcash@gmail.com',
-      subject: `🔥 New AI Skills Agents Lead: ${business} (${name})`,
-      html: `
-        <div style="font-family:sans-serif;background:#080808;color:#F0EEE8;padding:32px;max-width:540px;">
-          <div style="color:#00C896;font-weight:900;font-size:20px;margin-bottom:24px;">New Lead — AI Skills Agents</div>
-          <table style="width:100%;border-collapse:collapse;">
-            <tr><td style="padding:8px 0;color:#888;font-size:13px;width:140px;">Name</td><td style="color:#F0EEE8;font-size:14px;font-weight:700;">${name}</td></tr>
-            <tr><td style="padding:8px 0;color:#888;font-size:13px;">Email</td><td style="color:#00C896;font-size:14px;">${email}</td></tr>
-            <tr><td style="padding:8px 0;color:#888;font-size:13px;">Business</td><td style="color:#F0EEE8;font-size:14px;">${business}</td></tr>
-            <tr><td style="padding:8px 0;color:#888;font-size:13px;">Company Size</td><td style="color:#F0EEE8;font-size:14px;">${size || 'Not specified'}</td></tr>
-          </table>
-          <div style="margin-top:20px;padding:16px;background:#001a12;border-left:3px solid #00C896;">
-            <div style="font-size:11px;color:#888;margin-bottom:8px;letter-spacing:1px;">BIGGEST TIME-WASTER</div>
-            <div style="color:#F0EEE8;font-size:14px;line-height:1.6;">${pain}</div>
+    // Send notification email via Brevo SMTP API
+    await fetch('https://api.brevo.com/v3/smtp/email', {
+      method: 'POST',
+      headers: {
+        'accept': 'application/json',
+        'content-type': 'application/json',
+        'api-key': brevoKey,
+      },
+      body: JSON.stringify({
+        sender: { name: 'AI Skills Agents', email: 'noreply@thevoiceofcash.com' },
+        to: [{ email: 'thevoiceofcash@gmail.com', name: 'The Voice of Cash' }],
+        subject: `[AI Skills Agents] New Lead: ${business} (${name})`,
+        htmlContent: `
+          <div style="font-family:sans-serif;max-width:540px;padding:32px;">
+            <h2 style="color:#2563EB;margin-bottom:24px;">New Lead from AI Skills Agents</h2>
+            <table style="width:100%;border-collapse:collapse;">
+              <tr><td style="padding:8px 0;color:#888;font-size:13px;width:140px;">Name</td><td style="font-size:14px;font-weight:700;">${name}</td></tr>
+              <tr><td style="padding:8px 0;color:#888;font-size:13px;">Email</td><td style="color:#2563EB;font-size:14px;">${email}</td></tr>
+              <tr><td style="padding:8px 0;color:#888;font-size:13px;">Business</td><td style="font-size:14px;">${business}</td></tr>
+              <tr><td style="padding:8px 0;color:#888;font-size:13px;">Company Size</td><td style="font-size:14px;">${size || 'Not specified'}</td></tr>
+            </table>
+            <div style="margin-top:20px;padding:16px;background:#F0F9FF;border-left:3px solid #2563EB;">
+              <div style="font-size:11px;color:#888;margin-bottom:8px;letter-spacing:1px;">BIGGEST TIME-WASTER</div>
+              <div style="font-size:14px;line-height:1.6;">${pain}</div>
+            </div>
+            <p style="margin-top:24px;font-size:12px;color:#999;">Source: aiskillsagents.com</p>
           </div>
-          <div style="margin-top:24px;font-size:12px;color:#333;">Source: aiskillsagents.com</div>
-        </div>
-      `,
+        `,
+      }),
     });
 
     return NextResponse.json({ ok: true });
   } catch (e) {
-    console.error(e);
+    console.error('Lead form error:', e);
     return NextResponse.json({ error: 'Failed' }, { status: 500 });
   }
 }
