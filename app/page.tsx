@@ -919,6 +919,10 @@ export default function Home() {
               </a>
               <a href="/privacy" style={{ display: 'block', fontSize: 14, color: TEXT_MUTED, textDecoration: 'none', marginBottom: 10 }}>Privacy Policy</a>
               <a href="/terms" style={{ display: 'block', fontSize: 14, color: TEXT_MUTED, textDecoration: 'none', marginBottom: 10 }}>Terms of Service</a>
+              <a href="/disclaimer" style={{ display: 'block', fontSize: 14, color: TEXT_MUTED, textDecoration: 'none', marginBottom: 10 }}>Disclaimer</a>
+              <a href="/affiliate-disclosure" style={{ display: 'block', fontSize: 14, color: TEXT_MUTED, textDecoration: 'none', marginBottom: 10 }}>Affiliate Disclosure</a>
+              <a href="/contact" style={{ display: 'block', fontSize: 14, color: TEXT_MUTED, textDecoration: 'none', marginBottom: 10 }}>Contact</a>
+              <a href="/dmca" style={{ display: 'block', fontSize: 14, color: TEXT_MUTED, textDecoration: 'none', marginBottom: 10 }}>DMCA</a>
             </div>
           </div>
           <div style={{ borderTop: `1px solid ${BORDER}`, paddingTop: 24, marginBottom: 16, display: 'flex', gap: 24, flexWrap: 'wrap', alignItems: 'center' }}>
