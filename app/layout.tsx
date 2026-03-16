@@ -53,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="linkedin:owner" content="The Voice of Cash" />
         <meta property="og:image:type" content="image/png" />
         <meta name="facebook-domain-verification" content="" />
+        <link rel="manifest" href="/site.webmanifest" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
