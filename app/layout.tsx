@@ -53,6 +53,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="linkedin:owner" content="The Voice of Cash" />
         <meta property="og:image:type" content="image/png" />
         <meta name="facebook-domain-verification" content="" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "AI Skills Agents",
+          "url": "https://aiskillsagents.com",
+          "description": "Custom AI systems that answer phones, book appointments, follow up with leads, and run your back office for small business owners."
+        }) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "AI Skills Agents",
+          "url": "https://aiskillsagents.com"
+        }) }} />
       </head>
       <body style={{ fontFamily: 'var(--font-inter), system-ui, sans-serif' }}><NetworkBar />{children}</body>
     </html>

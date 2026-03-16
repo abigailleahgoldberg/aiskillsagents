@@ -921,6 +921,12 @@ export default function Home() {
               <a href="/terms" style={{ display: 'block', fontSize: 14, color: TEXT_MUTED, textDecoration: 'none', marginBottom: 10 }}>Terms of Service</a>
             </div>
           </div>
+          <div style={{ borderTop: `1px solid ${BORDER}`, paddingTop: 24, marginBottom: 16, display: 'flex', gap: 24, flexWrap: 'wrap', alignItems: 'center' }}>
+            <span style={{ fontSize: 12, fontWeight: 700, color: TEXT_MUTED, letterSpacing: '1px', textTransform: 'uppercase' }}>Learn More</span>
+            <a href="https://www.anthropic.com" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: BLUE, textDecoration: 'none', fontWeight: 600 }}>Anthropic — AI Safety Research →</a>
+            <a href="https://openai.com" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: BLUE, textDecoration: 'none', fontWeight: 600 }}>OpenAI →</a>
+            <a href="https://www.sba.gov/business-guide/manage-your-business/strengthen-your-cybersecurity" target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, color: BLUE, textDecoration: 'none', fontWeight: 600 }}>SBA: AI for Small Business →</a>
+          </div>
           <div style={{ borderTop: `1px solid ${BORDER}`, paddingTop: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
             <div style={{ fontSize: 13, color: TEXT_MUTED }}>© 2025 AI Skills Agents. All rights reserved.</div>
             <div style={{ fontSize: 13, color: TEXT_MUTED }}>
