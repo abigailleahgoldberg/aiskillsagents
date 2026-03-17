@@ -2,30 +2,75 @@
 
 import { useState, useEffect } from "react";
 
-const LINKS = [
-  { label: "AnthropicAISkills", href: "https://anthropicaiskills.com" },
-  { label: "ClaudeAISkills", href: "https://claudeaiskills.com" },
-  { label: "Search Performance Marketing", href: "https://searchperformancemarketing.com" },
-];
+const LABEL = "AI Skills Network";
+const LINKS = [{"label": "AnthropicAISkills", "href": "https://anthropicaiskills.com"}, {"label": "ClaudeAISkills", "href": "https://claudeaiskills.com"}];
+const STORAGE_KEY = "aiskillsagents-network-bar-dismissed";
+const ACCENT = "rgba(99,102,241,0.8)";
+const ACCENT_HOVER = "#6366f1";
+const BG = "#050510";
 
 export default function NetworkBar() {
   const [dismissed, setDismissed] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const val = localStorage.getItem("aiskills-network-bar-dismissed");
+    const val = localStorage.getItem(STORAGE_KEY);
     if (val !== "1") setDismissed(false);
+    const check = () => setIsMobile(window.innerWidth < 640);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
   }, []);
 
   const dismiss = () => {
-    localStorage.setItem("aiskills-network-bar-dismissed", "1");
+    localStorage.setItem(STORAGE_KEY, "1");
     setDismissed(true);
   };
 
   if (dismissed) return null;
 
+  if (isMobile) {
+    return (
+      <div style={{
+        background: BG,
+        height: 28,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: 14,
+        position: "relative",
+        overflow: "hidden",
+        paddingRight: 28,
+        paddingLeft: 12,
+      }}>
+        {LINKS.map((l) => (
+          <a
+            key={l.label}
+            href={l.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: ACCENT,
+              textDecoration: "none",
+              fontSize: 10,
+              fontWeight: 600,
+              whiteSpace: "nowrap" as const,
+              flexShrink: 0,
+            }}
+          >
+            {l.label}
+          </a>
+        ))}
+        <button onClick={dismiss} aria-label="Dismiss" style={{ position: "absolute", right: 8, background: "none", border: "none", color: "rgba(255,255,255,0.35)", cursor: "pointer", fontSize: 14, lineHeight: 1, padding: "0 4px" }}>
+          &times;
+        </button>
+      </div>
+    );
+  }
+
   return (
     <div style={{
-      background: "#0F1723",
+      background: BG,
       height: 28,
       display: "flex",
       alignItems: "center",
@@ -34,10 +79,9 @@ export default function NetworkBar() {
       position: "relative",
       fontSize: 11,
       letterSpacing: "0.5px",
-      fontFamily: "var(--font-inter), system-ui, sans-serif",
     }}>
-      <span style={{ color: "rgba(255,255,255,0.4)", whiteSpace: "nowrap" }}>
-        Part of The Voice of Cash Network
+      <span style={{ color: "rgba(255,255,255,0.4)", whiteSpace: "nowrap" as const, flexShrink: 0, fontSize: 11 }}>
+        {LABEL}
       </span>
       <div style={{ display: "flex", gap: 16, alignItems: "center" }}>
         {LINKS.map((l) => (
@@ -47,34 +91,21 @@ export default function NetworkBar() {
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              color: "rgba(37,99,235,0.8)",
+              color: ACCENT,
               textDecoration: "none",
               fontSize: 11,
-              fontWeight: 600,
+              fontWeight: 500,
+              whiteSpace: "nowrap" as const,
               transition: "color 0.2s",
             }}
-            onMouseEnter={e => (e.currentTarget.style.color = "#2563EB")}
-            onMouseLeave={e => (e.currentTarget.style.color = "rgba(37,99,235,0.8)")}
+            onMouseEnter={e => (e.currentTarget.style.color = ACCENT_HOVER)}
+            onMouseLeave={e => (e.currentTarget.style.color = ACCENT)}
           >
             {l.label}
           </a>
         ))}
       </div>
-      <button
-        onClick={dismiss}
-        aria-label="Dismiss network bar"
-        style={{
-          position: "absolute",
-          right: 12,
-          background: "none",
-          border: "none",
-          color: "rgba(255,255,255,0.3)",
-          cursor: "pointer",
-          fontSize: 14,
-          lineHeight: 1,
-          padding: "0 4px",
-        }}
-      >
+      <button onClick={dismiss} aria-label="Dismiss network bar" style={{ position: "absolute", right: 12, background: "none", border: "none", color: "rgba(255,255,255,0.35)", cursor: "pointer", fontSize: 14, lineHeight: 1, padding: "0 4px" }}>
         &times;
       </button>
     </div>
