@@ -317,7 +317,7 @@ export default function Home() {
                 borderRadius: 20,
                 marginBottom: 28,
               }}>
-                Trusted by 50+ businesses nationwide
+                Trusted by businesses nationwide
               </div>
 
               <h1 style={{
@@ -353,7 +353,7 @@ export default function Home() {
                   onMouseEnter={e => (e.currentTarget.style.background = BLUE_DARK)}
                   onMouseLeave={e => (e.currentTarget.style.background = BLUE)}
                 >
-                  Get Your Free Plan
+                  Quote My Agent
                 </a>
                 <a href="#how" style={{
                   border: `2px solid ${BORDER}`, color: TEXT_SECONDARY, fontWeight: 600,
@@ -364,7 +364,7 @@ export default function Home() {
                   onMouseEnter={e => { e.currentTarget.style.borderColor = BLUE; e.currentTarget.style.color = BLUE; }}
                   onMouseLeave={e => { e.currentTarget.style.borderColor = BORDER; e.currentTarget.style.color = TEXT_SECONDARY; }}
                 >
-                  See How It Works
+                  Build An Agent
                 </a>
               </div>
 
@@ -405,7 +405,7 @@ export default function Home() {
                     Tell Us About Your Business
                   </h2>
                   <p style={{ fontSize: 14, color: TEXT_MUTED, marginBottom: 28 }}>
-                    Free discovery. No sales pitch. Just a clear plan.
+                    No pressure. Just a clear plan.
                   </p>
                   <form onSubmit={submit} style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
                     {[
@@ -475,10 +475,10 @@ export default function Home() {
                       onMouseEnter={e => { if (status !== 'loading') e.currentTarget.style.background = BLUE_DARK; }}
                       onMouseLeave={e => { if (status !== 'loading') e.currentTarget.style.background = BLUE; }}
                     >
-                      {status === 'loading' ? 'Sending...' : 'Get My Free Plan'}
+                      {status === 'loading' ? 'Sending...' : 'Quote My Agent'}
                     </button>
                     <p style={{ fontSize: 12, color: TEXT_MUTED, textAlign: 'center' }}>
-                      No spam. No pressure. Response within 24 hours.
+                      No spam. Response within 24 hours.
                     </p>
                   </form>
                 </>
@@ -579,7 +579,7 @@ export default function Home() {
               onMouseEnter={e => (e.currentTarget.style.background = BLUE_DARK)}
               onMouseLeave={e => (e.currentTarget.style.background = BLUE)}
             >
-              Get Your Free Plan
+              Quote My Agent
             </a>
           </div>
         </div>
@@ -833,7 +833,7 @@ export default function Home() {
             padding: '36px 32px', boxShadow: '0 4px 24px rgba(37,99,235,0.08)',
           }}>
             <h3 style={{ fontFamily: 'var(--font-merriweather), serif', fontWeight: 700, fontSize: 20, color: TEXT, marginBottom: 20 }}>
-              Get Your Free Plan
+              Quote My Agent
             </h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
               {[

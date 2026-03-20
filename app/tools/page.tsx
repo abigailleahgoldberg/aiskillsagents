@@ -224,7 +224,7 @@ export default function ToolsPage() {
             textDecoration: 'none', borderRadius: 8, minHeight: 44,
           }}
         >
-          Get a Free Consultation
+          Get a Quote
         </a>
       </div>
 

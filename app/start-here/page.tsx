@@ -144,7 +144,7 @@ export default function StartHerePage() {
           Ready to build your first AI system?
         </h2>
         <p style={{ color: TEXT_MUTED, marginBottom: 32, fontSize: 17, lineHeight: 1.65, maxWidth: 480, margin: '0 auto 32px' }}>
-          Tell us what is costing you the most time. We will put together a free plan — no obligation.
+          Tell us what is costing you the most time. We will put together a custom plan — no obligation.
         </p>
         <a href="/#get-started"
           style={{
@@ -153,7 +153,7 @@ export default function StartHerePage() {
             textDecoration: 'none', borderRadius: 8, minHeight: 44,
           }}
         >
-          Get My Free Plan
+          Quote My Agent
         </a>
       </div>
 

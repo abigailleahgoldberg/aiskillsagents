@@ -182,7 +182,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   }}
 
                   >
-                    Get My Free Plan
+                    Quote My Agent
                   </a>
                 </div>
               )}
@@ -213,7 +213,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         }}
 
         >
-          Get Started Free
+          Build An Agent
         </a>
       </div>
 

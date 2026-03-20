@@ -116,7 +116,7 @@ export default function BlogPage() {
           padding: '16px 40px', textDecoration: 'none', borderRadius: 8, display: 'inline-block',
         }}
         >
-          Get Your Free Plan
+          Quote My Agent
         </a>
       </section>
 
