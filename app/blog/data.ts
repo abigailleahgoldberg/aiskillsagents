@@ -10,7 +10,64 @@ export interface BlogPost {
   content: string;
 }
 
-export const posts: BlogPost[] = [
+export const posts: BlogPost[
+  {
+    slug: "va-vs-ai-agent-real-cost-breakdown-service-businesses",
+    title: "VA vs AI Agent: The Real Cost Breakdown for Service Businesses",
+    seoTitle: "Virtual Assistant vs AI Agent Cost Comparison 2026 | AI Skills Agents",
+    seoDescription: "Hiring a VA costs $1,200-$2,000/month. An AI agent system costs under $300/month and works 24/7. Here is the honest math for service businesses.",
+    date: "2026-03-23",
+    category: "Business Strategy",
+    readTime: "6 min read",
+    excerpt: "Hiring a VA costs $1,200 to $2,000 per month. An AI agent system costs under $300 per month and works 24 hours a day. Here is the honest cost breakdown every service business needs to see.",
+    content: `The conversation about AI agents replacing virtual assistants has been happening in abstract terms for two years. Here is the concrete math that most people are not running.
+
+A full-time virtual assistant in the US market in 2026 costs between $15 and $25 per hour. At 40 hours a week that is $2,400 to $4,000 per month. At 20 hours per week, which is more realistic for most small service businesses, you are at $1,200 to $2,000 per month. You also deal with onboarding time, communication overhead, sick days, vacation coverage, and the fact that your VA is doing their best work for 6 hours of those 8 and you know it.
+
+An AI agent system set up correctly for a service business costs between $200 and $500 per month depending on which tools you stack. It runs 24 hours a day. It does not take sick days. It does not need onboarding once it is configured. It does not get distracted. And the work it does at 2am on a Saturday is identical to the work it does at 10am on a Tuesday.
+
+Let me be specific about what this actually looks like.
+
+For a coaching business with $15,000 in monthly revenue, the typical VA use case includes responding to inquiry emails, scheduling calls, sending follow-up sequences, updating CRM records, and posting to social media. All of that can be automated today with existing tools. The cost difference between a VA doing those tasks and an AI system doing those tasks is approximately $1,500 to $1,800 per month.
+
+Over a year that is $18,000 to $21,600 in savings. That is the cost of a team member. That is the cost of a real marketing push. That is real money.
+
+The things a VA does that AI cannot replace: relationship management that requires genuine human judgment, high-stakes client calls, creative strategy sessions, anything where the human relationship is the product. For most service businesses, that is a smaller percentage of VA work than they think.
+
+The setup cost is real. A properly configured AI agent system for a service business takes 4 to 8 weeks to configure correctly. You will spend money on tools, on implementation, on testing. That is a legitimate objection. But you are comparing a one-time setup cost against a recurring monthly expense that compounds indefinitely.
+
+The calculation is not difficult. What is difficult is deciding to make the change.
+
+This is not a prediction about the future of work. This is a description of what is available today, what it costs today, and what it saves today. The businesses that do the math and act on it in 2026 will have a structural cost advantage that their competitors who wait will spend years trying to close.
+
+Run the math for your business. If the numbers work, the decision is clear.`
+  },
+  {
+    slug: "how-to-hire-your-first-ai-agent-without-a-tech-background",
+    title: "How to Hire Your First AI Agent Without a Tech Background",
+    seoTitle: "How to Hire an AI Agent Without Tech Experience 2026 | AI Skills Agents",
+    seoDescription: "You do not need to be technical to run AI agents in your business. Here is the practical guide to getting started without a computer science degree.",
+    date: "2026-03-23",
+    category: "Getting Started",
+    readTime: "5 min read",
+    excerpt: "You do not need to be technical to run AI agents in your business. Here is the practical guide to getting started without a computer science degree.",
+    content: `The number one thing that stops small business owners from using AI agents is the belief that they are too complicated for someone without a technical background. That belief is wrong in 2026, and it is costing people real money.
+
+Here is the honest truth: setting up an AI agent for your business does not require coding knowledge. It requires clear thinking about what you want automated, patience during the setup process, and a willingness to spend a few weeks figuring out how something new works. Most business owners already do harder things than this before breakfast.
+
+Start with one workflow. Not your entire business. One. The highest-leverage choice for most service businesses is email inquiry response. Someone fills out your contact form and your AI agent sends a personalized response within five minutes, qualifies the lead with two questions, and schedules a call if they are interested. That is it. One workflow. You can have this running in a week.
+
+The tools you need are simpler than you think. You need an email tool like Gmail or Outlook which you already have. You need a scheduling tool like Calendly. You need an AI writing tool like Claude or ChatGPT. You need a simple automation tool like Make or Zapier to connect them. None of these require technical knowledge to set up at a basic level. All of them have tutorials written for non-technical users.
+
+The configuration step is where people get stuck because they try to do too much at once. Write down exactly what you want to happen step by step as if you were explaining it to a new employee. Then translate that into the automation tool one step at a time. Test each step before adding the next one. This is not a technical skill. This is logical thinking, which you already have.
+
+The first week will be imperfect. Your agent will send something slightly off, or miss a case you did not account for. This is normal. This is how every system is built. Adjust it. The second week will be better. By the fourth week you will wonder why you did not do this a year ago.
+
+The businesses that are going to win in the next five years are not necessarily the ones with the biggest teams or the most money. They are the ones that systematize faster. An AI agent that handles your inquiry responses frees up your time for the work that actually generates revenue. That is the calculation that matters.
+
+You do not need a technical background. You need a clear process and the willingness to spend three weeks setting something up that will save you twenty hours a month for the next decade. Do the math.`
+  },
+] = [
   {
     slug: "what-are-ai-skills",
     title: "What Are AI Skills? The Plain English Guide for Business Owners",
