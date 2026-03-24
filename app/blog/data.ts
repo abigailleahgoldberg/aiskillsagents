@@ -30,7 +30,7 @@ Test on ten real examples before going live. Find the edge cases — the weird r
 The goal is not to remove humans from your business. The goal is to remove humans from the parts of the business that do not require human judgment, so those humans can do the things that do.`,
     date: '2026-03-24',
     category: 'AI Strategy',
-    readTime: 6
+    readTime: '6 min read'
   },
   {
     slug: 'ai-customer-service-setup-small-business',
@@ -49,7 +49,7 @@ The human handoff is critical and often skipped. Not every inquiry should be han
 Setup timeline for a basic version: two to four weeks. The work is mostly in training the agent and testing edge cases. The tools are available off the shelf. The limiting factor is always the quality of the documentation you feed the system.`,
     date: '2026-03-24',
     category: 'AI Tools',
-    readTime: 6
+    readTime: '6 min read'
   },
   {
     slug: "va-vs-ai-agent-real-cost-breakdown-service-businesses",
