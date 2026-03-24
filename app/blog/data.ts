@@ -10,7 +10,7 @@ export interface BlogPost {
   content: string;
 }
 
-export const posts: BlogPost[
+export const posts: BlogPost[] = [
   {
     slug: 'ai-workflow-automation-step-by-step-guide',
     title: 'How to Build an AI Workflow Automation: A Step-by-Step Guide for Non-Technical Business Owners',
