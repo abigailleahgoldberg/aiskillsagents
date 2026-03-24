@@ -12,6 +12,47 @@ export interface BlogPost {
 
 export const posts: BlogPost[
   {
+    slug: 'ai-workflow-automation-step-by-step-guide',
+    title: 'How to Build an AI Workflow Automation: A Step-by-Step Guide for Non-Technical Business Owners',
+    excerpt: 'No code, no engineering degree. Here is how to actually build an AI workflow that saves you time starting this week.',
+    content: `Most articles about AI workflow automation are written for people who already understand what workflows are. This one is written for the business owner who has heard the term, suspects it could help them, and wants to know what it actually involves.
+
+Start with one workflow. Not your whole operation — one specific, repetitive process that costs you time every single week. Responding to the same inquiry emails. Scheduling appointments. Generating weekly reports. Moving data from one system to another. Pick the one that annoys you most and start there.
+
+Map the steps manually before touching any technology. Write down exactly what you do, in order, every time you do this thing. Where does it start? What information do you need? What decisions do you make along the way? Where does it end? This map is your automation blueprint.
+
+Choose your tools based on what you already use. If your business runs on Google Workspace, start with tools that integrate with Google. If you use a specific CRM, look for automation tools that connect to it. The best AI automation tool is the one that connects to your existing systems without requiring you to migrate everything.
+
+Make, Zapier, and similar no-code platforms connect applications and automate steps between them without requiring you to write code. You define a trigger (a new inquiry email arrives) and a sequence of actions (create a CRM record, send an acknowledgment, schedule a follow-up task). The AI components can draft responses, categorize inputs, and make simple decisions.
+
+Test on ten real examples before going live. Find the edge cases — the weird requests that do not fit the normal pattern. Decide how to handle them: either add them to the automation or flag them for human review. Go live with a human in the loop initially. Trust the automation more as it proves itself.
+
+The goal is not to remove humans from your business. The goal is to remove humans from the parts of the business that do not require human judgment, so those humans can do the things that do.`,
+    date: '2026-03-24',
+    category: 'AI Strategy',
+    readTime: 6
+  },
+  {
+    slug: 'ai-customer-service-setup-small-business',
+    title: 'AI Customer Service for Small Business: The Setup That Actually Works',
+    excerpt: 'What a real AI customer service setup looks like for a business with 1-10 employees.',
+    content: `The pitch for AI customer service is always the same: respond to every inquiry instantly, 24/7, never miss a lead. The pitch is true. The implementation is where most small businesses get lost.
+
+A working AI customer service setup for a small business has three components: the intake channel, the AI agent, and the human handoff. Getting all three right is what separates a system that works from a system that frustrates customers.
+
+The intake channel is wherever customers reach you — your website chat widget, your email inbox, your phone number if you are using an AI phone receptionist. You need one primary channel to automate before expanding to others. Pick the one where most of your inquiries come in.
+
+The AI agent needs to be trained on your specific business. Generic AI assistants give generic answers. An AI agent trained on your services, your pricing, your FAQs, your booking process, and your policies gives answers that actually help your customers. The training is not complicated — it is essentially a well-organized document of everything a knowledgeable employee would know — but it requires you to write it down.
+
+The human handoff is critical and often skipped. Not every inquiry should be handled entirely by AI. Complex situations, angry customers, high-value opportunities — these need a human. The system needs a clear rule for what triggers a handoff and a reliable way to notify a human when it happens. An AI system without a clean handoff protocol will lose customers who needed more than it could give.
+
+Setup timeline for a basic version: two to four weeks. The work is mostly in training the agent and testing edge cases. The tools are available off the shelf. The limiting factor is always the quality of the documentation you feed the system.`,
+    date: '2026-03-24',
+    category: 'AI Tools',
+    readTime: 6
+  },
+] = [
+  {
     slug: "va-vs-ai-agent-real-cost-breakdown-service-businesses",
     title: "VA vs AI Agent: The Real Cost Breakdown for Service Businesses",
     seoTitle: "Virtual Assistant vs AI Agent Cost Comparison 2026 | AI Skills Agents",
@@ -67,7 +108,6 @@ The businesses that are going to win in the next five years are not necessarily 
 
 You do not need a technical background. You need a clear process and the willingness to spend three weeks setting something up that will save you twenty hours a month for the next decade. Do the math.`
   },
-] = [
   {
     slug: "what-are-ai-skills",
     title: "What Are AI Skills? The Plain English Guide for Business Owners",
