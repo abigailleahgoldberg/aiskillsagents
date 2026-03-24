@@ -51,7 +51,6 @@ Setup timeline for a basic version: two to four weeks. The work is mostly in tra
     category: 'AI Tools',
     readTime: 6
   },
-] = [
   {
     slug: "va-vs-ai-agent-real-cost-breakdown-service-businesses",
     title: "VA vs AI Agent: The Real Cost Breakdown for Service Businesses",
