@@ -49,8 +49,19 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const related = getRelatedPosts(post.slug, post.category);
   const paragraphs = post.content.split("\n\n").filter(Boolean);
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": (post.seoDescription || post.excerpt),
+    "datePublished": post.date,
+    "author": { "@type": "Organization", "name": "AI Skills Agents" },
+    "publisher": { "@type": "Organization", "name": "AI Skills Agents", "url": "https://aiskillsagents.com" }
+  };
+
   return (
     <div style={{ minHeight: "100vh", background: "#FFFFFF", color: TEXT, fontFamily: "var(--font-inter), system-ui, sans-serif" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {/* Nav */}
       <nav style={{ padding: "0 5vw", height: 68, borderBottom: `1px solid ${BORDER}`, display: "flex", justifyContent: "space-between", alignItems: "center", background: "#FFFFFF" }}>
         <a href="/" style={{ fontFamily: "var(--font-merriweather), serif", fontWeight: 700, fontSize: 20, color: TEXT, textDecoration: "none" }}>
