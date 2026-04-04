@@ -2577,8 +2577,6 @@ The question isn't whether this would work for your business. The question is wh
 
 *Ready to map out what an AI agent could do for your specific operation? [Book a free automation audit with our team](/contact).*`,
   },
-];
-posts.push(...aprilPosts2026);,
   {
     slug: 'best-ai-tools-autistic-people-families-2026',
     title: 'The Best AI Tools for Autistic People and Their Families in 2026',
@@ -2653,3 +2651,6 @@ Happy World Autism Day 2026. This list will be updated as new tools emerge.
 
 *AI Skills Agents covers practical AI tools for real-world use. We believe useful AI works for everyone, including neurodivergent users.*`,
   },
+];
+
+posts.push(...aprilPosts2026);
